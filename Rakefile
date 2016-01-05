@@ -51,6 +51,12 @@ task :draft, :title do |t, args|
     EOS
   end
 
+namespace :assets do
+  task :precompile do
+    puts `bundle exec jekyll build`
+  end
+end
+
 # Uncomment the line below if you want the draft to automatically open in your default text editor
 # system ("#{ENV['EDITOR']} #{filename}")
 end
