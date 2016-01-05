@@ -66,5 +66,6 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - kramdown
 # https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
